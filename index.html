@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="./assets/pala.ico" type="image/png">
 </head>
 <body>
-      <h1>Gestion de Inventario</h1>
+      <h1>Gestion de Inventario Palas de Padel</h1>
 
       <form id="productos-tabla" class="productos-tabla-estilos">
         <label for="nombre-producto">Nombre:</label>
@@ -17,14 +18,17 @@
         <label for="precio-producto">Precio:</label>
         <input type="number" step="0.01" id="precio-producto" required>
         <button type="submit">Agregar Producto</button>
+        <label for="buscar-producto"></label>
+        <input id="buscar-producto" placeholder="Nombre Producto"> 
+        <button type="submit">BUSCAR</button>
       </form>
 
       <table id="inventario-tabla" class="inventario-tabla-estilos">
                <tr>
-                <th>Nombre:</th>
-                <th>Cantidad:</th>
-                <th>Precio:</th>
-                <th>Acciones:</th>
+                <th class="primera-fila-estilo">Nombre:</th>
+                <th class="primera-fila-estilo">Cantidad:</th>
+                <th class="primera-fila-estilo">Precio:</th>
+                <th class="primera-fila-estilo">Acciones:</th>
                </tr>
 
                <tbody id="clear-table"></tbody>

@@ -19,13 +19,16 @@ export const listproducts = () => {
         cell2.innerHTML = item.cantidad
         cell3.innerHTML = item.precio
 
-        const deleteButton = document.createElement("button")
-        deleteButton.innerText = "BORRAR"
-        deleteButton.addEventListener("click", () => {
+        
 
-            row.remove();
-
-        })
+       const deleteButton = document.createElement("button")
+       deleteButton.innerText = "BORRAR";
+       deleteButton.addEventListener("click", () => {
+       const confirmed = window.confirm("¿Quieres borrar este producto?")
+    if (confirmed) {
+        row.remove()
+    }
+});   
 
         cell4.appendChild(deleteButton)
 
