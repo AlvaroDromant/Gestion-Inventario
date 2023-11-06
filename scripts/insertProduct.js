@@ -1,6 +1,7 @@
 import { inventario } from "./products.js";
 import { listproducts } from "./listproducts.js";
 
+
 export const insertProduct = () => {
     const productForm = document.getElementById("productos-tabla")
     productForm.addEventListener("submit", function(event){
@@ -34,5 +35,11 @@ export const insertProduct = () => {
 
     }
 
-    })
-}
+    }) 
+
+    } 
+
+
+
+
+

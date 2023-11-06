@@ -21,7 +21,7 @@ export const listproducts = () => {
 
         
 
-       const deleteButton = document.createElement("button")
+     const deleteButton = document.createElement("button")
        deleteButton.innerText = "BORRAR";
        deleteButton.addEventListener("click", () => {
        const confirmed = window.confirm("¿Quieres borrar este producto?")
@@ -53,6 +53,7 @@ export const listproducts = () => {
             const confirmButton = document.createElement("button");
             confirmButton.innerText = "CONFIRMAR";
             cell4.appendChild(confirmButton);
+            
 
             confirmButton.addEventListener("click", () => {
                 // Actualizar los valores de cantidad y precio con los nuevos valores de los campos de entrada
@@ -65,11 +66,23 @@ export const listproducts = () => {
 
                 // Eliminar el botón de confirmar edición
                 cell4.removeChild(confirmButton);
+
+            
             })
 
-        })
+        }) 
 
-        cell4.appendChild(editButton)
+        cell4.appendChild(editButton) 
         
     });
+
 }
+
+    
+
+    
+    
+
+  
+
+

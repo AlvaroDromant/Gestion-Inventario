@@ -54,10 +54,15 @@ button{
     border-radius: 2px;
     font-size: 16px;
     border: 1px solid white;
+    box-shadow: 0 2px 2px white;
 }
 
   .primera-fila-estilo {
     background-color: rgb(4, 12, 96);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .input-style{
+   width: 50%;
   }
