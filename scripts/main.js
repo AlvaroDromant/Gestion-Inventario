@@ -15,20 +15,10 @@ const buscarProducto = () => {
     const rows = table.getElementsByTagName('tr');
 
     for (let i = 0; i < rows.length; i++) {
-        const cells = rows[i].getElementsByTagName('td');
-        let found = false;
+        const cells = rows[i].getElementsByTagName('td')[0]; // Solo la primera celda (nombre)
+        const cellText = cells.innerText.toUpperCase();
 
-        for (let j = 0; j < cells.length; j++) {
-            if (cells[j]) {
-                const cellText = cells[j].innerText.toUpperCase();
-                if (cellText.indexOf(filter) > -1) {
-                    found = true;
-                    break;
-                }
-            }
-        }
-
-        if (found) {
+        if (cellText.indexOf(filter) > -1) {
             rows[i].style.display = '';
         } else {
             rows[i].style.display = 'none';
