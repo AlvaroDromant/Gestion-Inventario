@@ -1,14 +1,27 @@
-import { inventario } from "./products";
+import {listproducts} from "./listproducts.js"
+import {insertProduct} from "./insertProduct.js"
 
-document.addEventListener("DOMContentLoaded", listproducts);
+/**
+ * Autor: Alvaro Dromant Ligero(Estudiante)
+ * GitHub: 
+ */
+
+// Listamos los productos
+document.addEventListener("DOMContentLoaded", listproducts)
 
 document.addEventListener("click", () => {
-    const btnform = document.getElementById("productos-tabla");
+ const btnform = document.getElementById("productos-tabla")
 
-    btnform.addEventListener("click", () => {
-        insertProduct();
-    });
-});
+ btnform.addEventListener("click", () => {
+    insertProduct()
+ })
+}) 
+
+
+
+
+
+
 
 
 

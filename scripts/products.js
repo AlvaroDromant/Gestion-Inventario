@@ -1,4 +1,3 @@
-export { inventario };
 
 const getRandomQuantity = () => {
     return ((Math.random() * 20) + 1).toFixed(0);
@@ -31,4 +30,6 @@ const inventario = [
     { id: 23, nombre: "NOX Equation Control Pro", cantidad: getRandomQuantity(), precio: 157.46 },
     { id: 24, nombre: "Siux Pegasus Classic", cantidad: getRandomQuantity(), precio: 139.99 },
 ];
+
+export { inventario };
 
