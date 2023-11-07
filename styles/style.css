@@ -3,10 +3,20 @@
   src: url('/assets/Metal_Mania/MetalMania-Regular.ttf');
 }
 
-h1{
+.cabecera{
     font-family: 'Metal Mania';
     text-align: center;
-    color: white;
+    color: aliceblue;
+    display: flex;
+}
+
+img{
+    width: 250px;
+    height: 120px;
+    padding: auto;
+    margin: 25px 25px 25px 25px;
+    gap: 3px;
+    background-color: transparent;
 }
 
 body{
@@ -55,6 +65,8 @@ button{
     font-size: 16px;
     border: 1px solid white;
     box-shadow: 0 2px 2px white;
+    padding: 7px;
+    border-radius: 5px;
 }
 
   .primera-fila-estilo {
@@ -65,4 +77,14 @@ button{
 
   .input-style{
    width: 50%;
+   height: 20px;
+  }
+
+  .estilo-calcular {
+    background-color: rgb(147, 10, 10);
+    color: #fff;
+    box-shadow: 0 5px 5px rgb(12, 0, 0);
+    border: none;
+    margin: auto;
+    border-radius: 5px;
   }

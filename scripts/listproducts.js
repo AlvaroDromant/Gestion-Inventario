@@ -161,3 +161,21 @@ btnBuscar.addEventListener("click", () => {
 });
 } 
 
+const calcularTotal = () => {
+    let total = 0;
+
+    inventario.forEach(producto => {
+        total += producto.cantidad * producto.precio;
+    });
+
+    return total;
+};
+
+// Asociar la función calcularTotal al botón correspondiente en el HTML
+const btnCalcularTotal = document.getElementById('calcular-total');
+btnCalcularTotal.addEventListener('click', () => {
+    const totalInventario = calcularTotal();
+    alert(`El total del inventario es: ${totalInventario.toFixed(2)} €`);
+});
+
+
